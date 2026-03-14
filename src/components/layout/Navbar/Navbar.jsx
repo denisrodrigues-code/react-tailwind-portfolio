@@ -35,7 +35,9 @@ const Navbar = () => {
         
         <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2">
           <Code2 size={24} className="text-blue-500" />
-          <span className="text-lg ml-1">Denis Rodrigues</span>
+          <span className={`text-lg ml-1 ${
+            isDarkMode ? "text-white" : "text-gray-900"
+          }`}>Denis Rodrigues</span>
         </motion.div>
 
         {/* Desktop */}
@@ -51,7 +53,7 @@ const Navbar = () => {
           </motion.button>
         </div>
 
-        {/* Mobile Buttons */}
+        {/* Mobile Menu Buttons */}
         <div className="md:hidden flex items-center space-x-4">
           <motion.button
             whileTap={{ scale: 0.9 }}
