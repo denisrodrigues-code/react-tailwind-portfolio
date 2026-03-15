@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { NAV_ITEMS } from "@/constants"
+import { navigation } from "@/data"
 
 const NavItems = ({ scrollToSection, textColor }) => {
-  return NAV_ITEMS.map((item) => (
+  return navigation.map((item) => (
     <motion.button
       key={item}
       whileHover={{ y: -2 }}

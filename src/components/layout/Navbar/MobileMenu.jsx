@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { NAV_ITEMS } from "@/constants";
+import { navigation } from "@/data";
 
 const MobileMenu = ({ isDarkMode, scrollToSection }) => {
   const textColor = isDarkMode
@@ -8,7 +8,7 @@ const MobileMenu = ({ isDarkMode, scrollToSection }) => {
 
   return (
     <>
-      {NAV_ITEMS.map((item) => (
+      {navigation.map((item) => (
         <motion.button
           key={item}
           whileHover={{ x: 5 }}
