@@ -10,7 +10,7 @@ import {
   itemVariants,
   textVariants,
   imageVariants,
-} from "./heroAnimations";
+} from "@/constants";
 
 const Hero = () => {
   const { isDarkMode } = useTheme();
