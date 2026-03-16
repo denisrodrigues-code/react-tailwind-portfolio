@@ -45,3 +45,16 @@ export const imageVariants = {
     },
   },
 };
+
+export const skillBarVariants = {
+    hidden: {width: 0, opacity: 0},
+    visible: (level) => ({
+      width: `${level}%`,
+      opacity: 1,
+      transition: {
+        duration: 1.2,
+        ease: "easeOut",
+        delay: 0.3,
+      },
+    }),
+  };
