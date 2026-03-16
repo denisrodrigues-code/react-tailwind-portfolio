@@ -11,7 +11,9 @@ const HeroImage = ({ isDarkMode, imageVariants, mobile = false, itemVariants }) 
 
   return (
     <motion.div
+      initial="hidden"
       variants={imageVariants}
+      animate={"visible"}
       className={mobile ? "mb-8" : "flex justify-center lg:justify-end"}
     >
       <div className={`${mobile ? "mx-auto" : ""} relative ${sizeClasses}`}>
