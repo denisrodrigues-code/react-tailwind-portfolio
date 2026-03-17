@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { navigation } from "@/data"
+import { navigation } from "@/data";
 
 const NavItems = ({ scrollToSection, textColor }) => {
   return navigation.map((item) => (

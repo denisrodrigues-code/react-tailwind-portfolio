@@ -1,4 +1,4 @@
-import { Code2, Briefcase, Code, Server, Rocket, Trophy } from "lucide-react";
+import { Briefcase, Code, Code2, Rocket, Server, Trophy } from "lucide-react";
 
 export const journeySteps = [
   {

@@ -1,9 +1,9 @@
+import { AnimatePresence, motion } from "framer-motion";
+import { Code2, Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Code2, Sun, Moon, Menu, X } from "lucide-react";
 import { useTheme } from "@/hooks/useTheme";
+import MobileMenu from "./MobileMenu";
 import NavItems from "./NavItems";
-import MobileMenu from "./MobileMenu"
 
 const Navbar = () => {
   const { isDarkMode, toggleDarkMode } = useTheme();
@@ -28,16 +28,24 @@ const Navbar = () => {
   return (
     <motion.nav
       className={`fixed top-0 w-full z-50 px-6 py-4 ${
-        isDarkMode ? "bg-gray-950/80 border-gray-800" : "bg-gray-50/80 border-gray-200"
+        isDarkMode
+          ? "bg-gray-950/80 border-gray-800"
+          : "bg-gray-50/80 border-gray-200"
       } backdrop-blur-md border-b`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        
-        <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-2">
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="flex items-center space-x-2"
+        >
           <Code2 size={24} className="text-blue-500" />
-          <span className={`text-lg ml-1 ${
-            isDarkMode ? "text-white" : "text-gray-900"
-          }`}>Denis Rodrigues</span>
+          <span
+            className={`text-lg ml-1 ${
+              isDarkMode ? "text-white" : "text-gray-900"
+            }`}
+          >
+            Denis Rodrigues
+          </span>
         </motion.div>
 
         {/* Desktop */}
@@ -81,7 +89,9 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             className={`md:hidden mt-4 p-4 rounded-lg ${
-              isDarkMode ? "bg-gray-900 border-gray-800" : "bg-white border-gray-200"
+              isDarkMode
+                ? "bg-gray-900 border-gray-800"
+                : "bg-white border-gray-200"
             } border`}
           >
             <MobileMenu

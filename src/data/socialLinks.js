@@ -1,5 +1,5 @@
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import { Mail } from "lucide-react";
+import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 export const socialLinks = [
   {

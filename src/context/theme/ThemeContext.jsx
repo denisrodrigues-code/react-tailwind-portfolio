@@ -3,9 +3,7 @@ import { createContext, useEffect, useState } from "react";
 export const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ?? "light"
-  );
+  const [theme, setTheme] = useState(localStorage.getItem("theme") ?? "light");
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -27,7 +25,7 @@ export function ThemeProvider({ children }) {
     <ThemeContext.Provider
       value={{
         isDarkMode: theme === "dark",
-        toggleDarkMode
+        toggleDarkMode,
       }}
     >
       {children}

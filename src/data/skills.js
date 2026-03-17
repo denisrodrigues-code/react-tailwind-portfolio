@@ -1,12 +1,7 @@
-import {
-    Code2,
-    Server,
-    Database,
-    Cloud,
-} from "lucide-react"
+import { Cloud, Code2, Database, Server } from "lucide-react";
 
 export const skills = [
-    {
+  {
     title: "Frontend",
     icon: Code2,
     description: "Criação de interfaces modernas e responsivas",
@@ -54,4 +49,4 @@ export const skills = [
       { name: "Linux", level: 85, color: "bg-purple-700" },
     ],
   },
-]
+];

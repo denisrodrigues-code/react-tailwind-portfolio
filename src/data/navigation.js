@@ -3,5 +3,5 @@ export const navigation = [
   "Habilidades",
   "Projetos",
   "Sobre",
-  "Contato"
+  "Contato",
 ];

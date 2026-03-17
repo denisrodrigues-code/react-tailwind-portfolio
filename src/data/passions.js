@@ -1,4 +1,4 @@
-import { Heart, Coffee, BookOpen } from "lucide-react";
+import { BookOpen, Coffee, Heart } from "lucide-react";
 
 export const passions = [
   {
@@ -14,6 +14,7 @@ export const passions = [
   {
     icon: BookOpen,
     title: "Continuous Learning",
-    description: "Constantly improving through new technologies and best practices",
+    description:
+      "Constantly improving through new technologies and best practices",
   },
 ];
