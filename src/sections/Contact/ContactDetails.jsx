@@ -8,7 +8,7 @@ const ContactDetails = () => {
 
   return (
     <motion.div variants={itemVariants}>
-      <h3 className="text-2xl font-light mb-6">Dados para contato</h3>
+      <h3 className="text-2xl font-light mb-6">Informações de contato</h3>
 
       <div className="space-y-4 mb-8">
         {contactInfo.map((item) => {

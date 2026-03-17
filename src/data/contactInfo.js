@@ -4,7 +4,7 @@ export const contactInfo = [
   {
     icon: MapPin,
     label: "Localização",
-    value: "Penedo, AL - Brasil",
+    value: "Penedo-AL, Brasil",
   },
   {
     icon: Mail,
@@ -14,6 +14,6 @@ export const contactInfo = [
   {
     icon: Phone,
     label: "Telefone",
-    value: "+55 (82) 9XXXX-XXXX",
+    value: "+55 (82) 98828-1323",
   },
 ];
