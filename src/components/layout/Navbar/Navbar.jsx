@@ -54,7 +54,7 @@ const Navbar = () => {
 
           <motion.button
             whileTap={{ scale: 0.9 }}
-            onClick={() => toggleDarkMode(isDarkMode ? "light" : "dark")}
+            onClick={toggleDarkMode}
             className={`p-2 rounded-full transition-colors ${buttonColor}`}
           >
             {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
@@ -65,7 +65,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center space-x-4">
           <motion.button
             whileTap={{ scale: 0.9 }}
-            onClick={() => toggleDarkMode(isDarkMode ? "light" : "dark")}
+            onClick={toggleDarkMode}
             className={`p-2 rounded-full ${buttonColor}`}
           >
             {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
