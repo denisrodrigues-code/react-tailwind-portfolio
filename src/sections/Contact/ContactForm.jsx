@@ -10,8 +10,9 @@ const ContactForm = ({ email }) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const formElement = event.currentTarget;
 
-    const form = new FormData(event.currentTarget);
+    const form = new FormData(formElement);
     const name = form.get("name");
     const senderEmail = form.get("email");
     const message = form.get("message");
@@ -46,7 +47,7 @@ const ContactForm = ({ email }) => {
       setFeedbackMessage(
         "Mensagem enviada com sucesso. Obrigado pelo contato!",
       );
-      event.currentTarget.reset();
+      formElement.reset();
     } catch {
       setStatus("error");
       setFeedbackMessage(
