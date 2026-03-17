@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import PROFILE_PIC from "@/assets/images/profile-img.png";
+import PROFILE_PIC from "@/assets/images/profile-img.jpg";
 import HeroTechStack from "./HeroTechStack";
 
 const HeroImage = ({

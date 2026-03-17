@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import PROFILE_PIC from "@/assets/images/profile-img.png";
+import PROFILE_PIC from "@/assets/images/profile-img.jpg";
 import { itemVariants } from "@/constants";
 import { aboutContent } from "@/content/portfolio";
 import { useTheme } from "@/hooks/useTheme";
