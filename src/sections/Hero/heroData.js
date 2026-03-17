@@ -1,5 +1,5 @@
 export const heroContent = {
-  role: "Desenvolvedor Full Stack",
+  role: "Engenheiro de Software Full Stack",
   titleLine1: "Criando",
   titleHighlight: ["soluções", "sistemas", "produtos", "plataformas"],
   titleLine2: "digitais que geram impacto",
