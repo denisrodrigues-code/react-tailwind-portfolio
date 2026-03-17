@@ -1,4 +1,4 @@
-import PROJECT_IMG_1 from "@/assets/images/project-1.png";
+import PROJECT_IMG_1 from "@/assets/images/project-1.jpg";
 
 export const projects = [
   {

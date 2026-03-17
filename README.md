@@ -142,7 +142,7 @@ npm run build
 ### Imagens 🖼️
 
 - Imagem de perfil do Hero: `src/assets/images/profile-img.png`
-- Imagem da seção About: `public/images/about-image.png`
+- Imagem da seção About: `src/assets/images/about-image.jpg`
 
 ## Deploy 🌐
 

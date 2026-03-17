@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import ABOUT_CODING_IMAGE from "@/assets/images/about-image.jpg";
 import PROFILE_PIC from "@/assets/images/profile-img.jpg";
 import { itemVariants } from "@/constants";
 import { aboutContent } from "@/content/portfolio";
 import { useTheme } from "@/hooks/useTheme";
-
-const ABOUT_CODING_IMAGE = "/images/about-image.png";
 
 const AboutIntro = () => {
   const { isDarkMode } = useTheme();
