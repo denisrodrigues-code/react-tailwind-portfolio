@@ -1,7 +1,7 @@
 const ProjectCardContent = ({ project, isDarkMode }) => {
   return (
     <div className="p-6">
-      <h3 className="text-xl font-medium mb-3 group-hover:text-blue-500 transition-colors">
+      <h3 className="mb-3 font-mono text-xl font-medium group-hover:text-blue-500 transition-colors">
         {project.title}
       </h3>
 
@@ -13,17 +13,17 @@ const ProjectCardContent = ({ project, isDarkMode }) => {
         {project.description}
       </p>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 border-t pt-4 border-dashed border-slate-600/50">
         {project.tags.map((tag, tagIndex) => (
           <span
             key={tagIndex}
-            className={`text-xs px-3 py-1 rounded-full ${
+            className={`font-mono text-xs px-2.5 py-1 rounded-md ${
               isDarkMode
-                ? "bg-gray-800 text-gray-300"
-                : "bg-gray-100 text-gray-700 border border-gray-200"
+                ? "bg-slate-900 text-slate-300 border border-slate-700"
+                : "bg-white text-slate-700 border border-slate-300"
             }`}
           >
-            {tag}
+            #{tag}
           </span>
         ))}
       </div>

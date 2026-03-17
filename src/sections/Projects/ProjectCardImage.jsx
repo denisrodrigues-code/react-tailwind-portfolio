@@ -13,8 +13,8 @@ const ProjectCardImage = ({ project, isDarkMode }) => {
 
       {project.featured && (
         <div className="absolute top-4 left-4">
-          <span className="bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-medium">
-            Destacado
+          <span className="bg-blue-500 text-white text-[11px] px-2.5 py-1 rounded-md font-mono uppercase tracking-wide">
+            featured
           </span>
         </div>
       )}
@@ -23,8 +23,8 @@ const ProjectCardImage = ({ project, isDarkMode }) => {
         <span
           className={`text-xs px-3 py-1 rounded-full font-medium backdrop-blur-sm ${
             isDarkMode
-              ? "bg-gray-800/80 text-gray-300"
-              : "bg-white/90 text-gray-700 border border-gray-200"
+              ? "bg-slate-900/90 text-slate-300 border border-slate-700 font-mono"
+              : "bg-white/90 text-slate-700 border border-slate-300 font-mono"
           }`}
         >
           {project.category}
@@ -42,10 +42,10 @@ const ProjectCardImage = ({ project, isDarkMode }) => {
           initial={{ y: 20, opacity: 0.5 }}
           whileHover={{ y: 0, opacity: 1, scale: 1.05 }}
           transition={{ duration: 0.3, delay: 0.1 }}
-          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full flex items-center space-x-2 text-sm font-medium transition-colors"
+          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md flex items-center space-x-2 text-sm font-mono transition-colors"
         >
           <ExternalLink size={16} />
-          <span>Ver Projeto</span>
+          <span>open_live</span>
         </motion.a>
 
         <motion.a
@@ -53,10 +53,10 @@ const ProjectCardImage = ({ project, isDarkMode }) => {
           initial={{ y: 20, opacity: 0.5 }}
           whileHover={{ y: 0, opacity: 1, scale: 1.05 }}
           transition={{ duration: 0.3, delay: 0.2 }}
-          className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-4 py-2 rounded-full flex items-center space-x-2 text-sm font-medium transition-all"
+          className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-4 py-2 rounded-md flex items-center space-x-2 text-sm font-mono transition-all"
         >
           <FiGithub size={16} />
-          <span>GitHub</span>
+          <span>source_code</span>
         </motion.a>
       </motion.div>
     </div>

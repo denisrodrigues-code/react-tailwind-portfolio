@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import TerminalFrame from "@/components/ui/TerminalFrame";
 import ProjectCardContent from "./ProjectCardContent";
 import ProjectCardImage from "./ProjectCardImage";
 
@@ -24,16 +25,17 @@ const ProjectCard = ({ project, isDarkMode }) => {
       }}
       className="group relative"
     >
-      <div
-        className={`rounded-2xl overflow-hidden border transition-all duration-500 backdrop-blur-sm ${
-          isDarkMode
-            ? "bg-gray-900/50 border-gray-800 hover:border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10"
-            : "bg-white/90 border-gray-200 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-500/10"
+      <TerminalFrame
+        isDarkMode={isDarkMode}
+        title={`${project.title.toLowerCase().replace(/\s+/g, "-")}.sh`}
+        bodyClassName="p-0"
+        className={`transition-all duration-500 ${
+          isDarkMode ? "hover:border-gray-700" : "hover:border-gray-400"
         }`}
       >
         <ProjectCardImage project={project} isDarkMode={isDarkMode} />
         <ProjectCardContent project={project} isDarkMode={isDarkMode} />
-      </div>
+      </TerminalFrame>
     </motion.div>
   );
 };

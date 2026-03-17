@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import TerminalFrame from "@/components/ui/TerminalFrame";
 import { itemVariants } from "@/constants";
 import { useTheme } from "@/hooks/useTheme";
 
@@ -60,45 +61,50 @@ const AboutTimeline = ({ steps }) => {
                 }`}
               />
 
-              <motion.div
-                className={`rounded-2xl border p-5 backdrop-blur-sm ${
-                  isDarkMode
-                    ? "border-slate-700 bg-slate-900/80 hover:border-blue-400/60"
-                    : "border-slate-200 bg-white/90 hover:border-blue-300"
-                }`}
-              >
-                <div className="mb-3 flex items-center gap-3">
-                  <div
-                    className={`rounded-lg p-2 ${
-                      isDarkMode
-                        ? "bg-slate-800 text-slate-200"
-                        : "bg-slate-100 text-slate-700"
+              <motion.div className="transition-colors duration-300">
+                <TerminalFrame
+                  isDarkMode={isDarkMode}
+                  title={`timeline-${step.year}.sh`}
+                  bodyClassName="p-5"
+                  className={
+                    isDarkMode
+                      ? "hover:border-blue-400/60"
+                      : "hover:border-blue-300"
+                  }
+                >
+                  <div className="mb-3 flex items-center gap-3">
+                    <div
+                      className={`rounded-lg p-2 ${
+                        isDarkMode
+                          ? "bg-slate-800 text-slate-200"
+                          : "bg-slate-100 text-slate-700"
+                      }`}
+                    >
+                      <Icon size={16} />
+                    </div>
+                    <span className="rounded-full bg-blue-500/15 px-3 py-1 text-xs font-semibold tracking-wide text-blue-500">
+                      {step.year}
+                    </span>
+                  </div>
+
+                  <h3 className="text-base font-semibold md:text-lg">
+                    {step.title}
+                  </h3>
+                  <p
+                    className={`mt-1 text-sm ${
+                      isDarkMode ? "text-slate-300" : "text-slate-700"
                     }`}
                   >
-                    <Icon size={16} />
-                  </div>
-                  <span className="rounded-full bg-blue-500/15 px-3 py-1 text-xs font-semibold tracking-wide text-blue-500">
-                    {step.year}
-                  </span>
-                </div>
-
-                <h3 className="text-base font-semibold md:text-lg">
-                  {step.title}
-                </h3>
-                <p
-                  className={`mt-1 text-sm ${
-                    isDarkMode ? "text-slate-300" : "text-slate-700"
-                  }`}
-                >
-                  {step.company}
-                </p>
-                <p
-                  className={`mt-3 text-sm leading-relaxed ${
-                    isDarkMode ? "text-slate-400" : "text-slate-600"
-                  }`}
-                >
-                  {step.description}
-                </p>
+                    {step.company}
+                  </p>
+                  <p
+                    className={`mt-3 text-sm leading-relaxed ${
+                      isDarkMode ? "text-slate-400" : "text-slate-600"
+                    }`}
+                  >
+                    {step.description}
+                  </p>
+                </TerminalFrame>
               </motion.div>
             </motion.article>
           );
