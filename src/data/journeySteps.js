@@ -1,58 +1,49 @@
-import { Briefcase, Code, Code2, Rocket, Server, Trophy } from "lucide-react";
+import { BookOpen, Code2, Globe, GraduationCap, Users } from "lucide-react";
 
 export const journeySteps = [
   {
-    year: "2021",
-    title: "Fundamentos de Engenharia de Software",
-    company: "Formacao Tecnica Independente",
+    year: "2017",
+    title: "Professor de Lógica de Programação",
+    company: "Instituto Federal de Alagoas",
     description:
-      "Consolidei base em desenvolvimento web, logica de programacao e boas praticas, estruturando os primeiros projetos com foco em qualidade e manutencao.",
-    icon: Code2,
-    color: "bg-blue-500",
-  },
-  {
-    year: "2022",
-    title: "Entrada no Mercado de Tecnologia",
-    company: "Estagio em Produto Digital",
-    description:
-      "Atuei no desenvolvimento frontend com React em ambiente de produto, colaborando com time multidisciplinar e amadurecendo processos de entrega.",
-    icon: Briefcase,
-    color: "bg-green-500",
-  },
-  {
-    year: "2023",
-    title: "Consolidacao da Atuacao Full Stack",
-    company: "Projetos e Consultoria Freelance",
-    description:
-      "Passei a liderar entregas ponta a ponta com React, Node.js e bancos de dados, traduzindo requisitos de negocio em solucoes tecnicas confiaveis.",
-    icon: Code,
+      "Atuei no ensino de lógica de programação, abordando fundamentos de algoritmos, estruturas básicas de programação e resolução de problemas.",
+    icon: BookOpen,
     color: "bg-purple-500",
   },
   {
-    year: "2024",
-    title: "Especializacao em Arquitetura Backend",
-    company: "Projetos Independentes de Escala",
+    year: "2018",
+    title: "Graduação em Ciência da Computação",
+    company: "Universidade Federal de Alagoas",
     description:
-      "Aprofundei atuacao em arquitetura de servicos, APIs escalaveis, modelagem de dados e decisoes de desempenho para sistemas de maior complexidade.",
-    icon: Server,
+      "Desenvolvi competências em algoritmos, estruturas de dados, sistemas operacionais, redes e arquitetura de software, além de experiência prática no desenvolvimento de aplicações e construção de soluções robustas e escaláveis.",
+    icon: GraduationCap,
+    color: "bg-blue-500",
+  },
+  {
+    year: "2020",
+    title: "Pós-graduação em Desenvolvimento Web Mobile",
+    company: "Faculdade VINCIT",
+    description:
+      "Aprofundei meus conhecimentos em desenvolvimento de aplicações web modernas, arquitetura de software, integração de APIs e construção de sistemas escaláveis.",
+    icon: Globe,
+    color: "bg-green-500",
+  },
+  {
+    year: "2024",
+    title: "Curso de Desenvolvedor Web Full Stack",
+    company: "Trybe",
+    description:
+      "Desenvolvi aplicações web completas, utilizando React, Node.js, APIs REST e bancos de dados, com foco em boas práticas de engenharia de software e desenvolvimento de sistemas escaláveis.",
+    icon: Code2,
     color: "bg-yellow-500",
   },
   {
-    year: "2025",
-    title: "Maturidade em Engenharia e Produto",
-    company: "Evolucao Profissional",
+    year: "2024",
+    title: "Instrutor de Back-end Summer Job",
+    company: "Trybe",
     description:
-      "Fortaleci ownership tecnico em arquitetura, performance e qualidade, com foco em previsibilidade de entregas e impacto direto em indicadores de produto.",
-    icon: Rocket,
+      "Atuei como instrutor de Back-end, apoiando alunos na construção de APIs, integração com bancos de dados e aplicação de boas práticas no desenvolvimento de aplicações server-side.",
+    icon: Users,
     color: "bg-pink-500",
-  },
-  {
-    year: "2026",
-    title: "Engenheiro de Software Full Stack",
-    company: "Atuacao Senior-Oriented",
-    description:
-      "Atuo na evolucao de plataformas escalaveis, elevando padroes de engenharia, apoiando decisoes tecnicas e contribuindo para crescimento sustentavel do produto.",
-    icon: Trophy,
-    color: "bg-indigo-500",
   },
 ];

@@ -24,7 +24,7 @@ const About = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="grid gap-12 lg:grid-cols-2 lg:gap-16"
+          className="space-y-10"
         >
           <AboutIntro />
           <AboutTimeline steps={journeySteps} />
