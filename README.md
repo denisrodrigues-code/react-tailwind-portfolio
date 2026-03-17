@@ -182,4 +182,4 @@ Deploy compatível com qualquer host estático (Vercel, Netlify, Cloudflare Page
 
 ## Licença 📄
 
-Definir conforme estratégia do projeto (MIT, proprietária etc.).
+Este projeto está licenciado sob a licença MIT.
