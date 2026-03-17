@@ -101,6 +101,29 @@ npm run dev
 
 Aplicação local: `http://localhost:5173`
 
+## Execução com Docker 🐳
+
+### Build + Run com Docker
+
+```bash
+docker build -t react-tailwind-portfolio .
+docker run --rm -p 8080:80 react-tailwind-portfolio
+```
+
+Aplicação no container: `http://localhost:8080`
+
+### Usando Docker Compose
+
+```bash
+docker compose up --build -d
+```
+
+Parar:
+
+```bash
+docker compose down
+```
+
 ## Portas de Qualidade ✅
 
 Antes de qualquer entrega, execute:
