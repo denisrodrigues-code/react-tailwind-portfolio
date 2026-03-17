@@ -5,8 +5,8 @@ import { socialLinks } from "@/data";
 import { useTheme } from "@/hooks/useTheme";
 
 const expertise = [
-  { label: "Arquitetura escalavel", icon: Layers3 },
-  { label: "Performance em producao", icon: Gauge },
+  { label: "Arquitetura escalável", icon: Layers3 },
+  { label: "Performance em produção", icon: Gauge },
   { label: "Qualidade e confiabilidade", icon: ShieldCheck },
 ];
 
@@ -61,8 +61,8 @@ const Footer = () => {
               }`}
             >
               Engenheiro de software full stack com foco em produtos digitais de
-              missao critica. Atuo da estrategia tecnica a entrega em producao,
-              priorizando escala, performance e experiencia do usuario.
+              missão crítica. Atuo da estratégia técnica à entrega em produção,
+              priorizando escala, performance e experiência do usuário.
             </p>
           </motion.div>
 
@@ -75,7 +75,7 @@ const Footer = () => {
             }`}
           >
             <h4 className="mb-4 text-sm uppercase tracking-widest text-blue-500">
-              Expertise
+              Especialidades
             </h4>
             <div className="space-y-3">
               {expertise.map((item) => (

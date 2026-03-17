@@ -45,7 +45,7 @@ const ProjectCardImage = ({ project, isDarkMode }) => {
           className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full flex items-center space-x-2 text-sm font-medium transition-colors"
         >
           <ExternalLink size={16} />
-          <span>Ver Demo</span>
+          <span>Ver Projeto</span>
         </motion.a>
 
         <motion.a

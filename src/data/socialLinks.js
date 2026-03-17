@@ -18,7 +18,3 @@ export const socialLinks = [
     url: "mailto:denisrodrigues.dev@gmail.com",
   },
 ];
-
-
-
-
