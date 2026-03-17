@@ -20,34 +20,36 @@ const HeroContent = ({
         {content.role}
       </motion.div>
 
-        <motion.h1
-          variants={itemVariants}
-          className={`${
-            mobile ? "text-3xl md:text-[2.5rem] mb-6" : "text-5xl xl:text-7xl mb-8"
-          } font-light leading-[1.1]`}
-        >
-          <span className="inline-flex items-center whitespace-nowrap">
-            <span className={isDarkMode ? "text-white" : "text-gray-900"}>
-              {content.titleLine1}
-            </span>
-      
-            <span className="ml-2 inline-flex items-center">
-              <HeroRotatingWord
-                words={
-                  mobile 
+      <motion.h1
+        variants={itemVariants}
+        className={`${
+          mobile
+            ? "text-3xl md:text-[2.5rem] mb-6"
+            : "text-5xl xl:text-7xl mb-8"
+        } font-light leading-[1.1]`}
+      >
+        <span className="inline-flex items-center whitespace-nowrap">
+          <span className={isDarkMode ? "text-white" : "text-gray-900"}>
+            {content.titleLine1}
+          </span>
+
+          <span className="ml-2 inline-flex items-center">
+            <HeroRotatingWord
+              words={
+                mobile
                   ? content.titleHighlight.filter((word) => word.length <= 8)
                   : content.titleHighlight
-                }
-              />
-            </span>
+              }
+            />
           </span>
-      
-          <br />
-      
-          <span className={isDarkMode ? "text-white" : "text-gray-900"}>
-            {content.titleLine2}
-          </span>
-        </motion.h1>
+        </span>
+
+        <br />
+
+        <span className={isDarkMode ? "text-white" : "text-gray-900"}>
+          {content.titleLine2}
+        </span>
+      </motion.h1>
 
       <motion.p
         variants={itemVariants}

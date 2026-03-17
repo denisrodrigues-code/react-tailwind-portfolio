@@ -3,7 +3,12 @@ import PROFILE_PIC from "@/assets/images/profile-img.png";
 import HeroTechStack from "./HeroTechStack";
 import { techStack } from "./heroData";
 
-const HeroImage = ({ isDarkMode, imageVariants, mobile = false, itemVariants }) => {
+const HeroImage = ({
+  isDarkMode,
+  imageVariants,
+  mobile = false,
+  itemVariants,
+}) => {
   const sizeClasses = mobile ? "w-32 h-32" : "w-80 h-96";
   const rounded = mobile ? "rounded-2xl" : "rounded-3xl";
   const borderInset1 = mobile ? "-inset-2" : "-inset-4";

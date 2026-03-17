@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const HeroRotatingWord = ({ words }) => {
   const [index, setIndex] = useState(0);

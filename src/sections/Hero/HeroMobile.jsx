@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import HeroImage from "./HeroImage";
 import HeroContent from "./HeroContent";
+import HeroImage from "./HeroImage";
 import HeroSocialLinks from "./HeroSocialLinks";
 import HeroTechStack from "./HeroTechStack";
 

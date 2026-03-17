@@ -1,16 +1,15 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import { useTheme } from "@/hooks/useTheme";
-
-import HeroMobile from "./HeroMobile";
-import HeroDesktop from "./HeroDesktop";
-import { heroContent, socialLinks, techStack } from "./heroData";
 import {
   containerVariants,
+  imageVariants,
   itemVariants,
   textVariants,
-  imageVariants,
 } from "@/constants";
+import { useTheme } from "@/hooks/useTheme";
+import HeroDesktop from "./HeroDesktop";
+import HeroMobile from "./HeroMobile";
+import { heroContent, socialLinks, techStack } from "./heroData";
 
 const Hero = () => {
   const { isDarkMode } = useTheme();

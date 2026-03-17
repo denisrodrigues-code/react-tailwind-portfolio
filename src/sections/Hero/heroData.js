@@ -1,5 +1,5 @@
-import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { Mail } from "lucide-react";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 export const heroContent = {
   role: "Desenvolvedor Full Stack",
