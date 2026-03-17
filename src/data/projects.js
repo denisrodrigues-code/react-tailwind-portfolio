@@ -3,9 +3,9 @@ import PROJECT_IMG_1 from "@/assets/images/project-1.png";
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Plataforma E-Commerce",
     description:
-      "A full-stack e-commerce solution with advanced filtering, payment integration, and real-time inventory updates.",
+      "Loja virtual completa com sistema de filtros, integração de pagamentos e controle de estoque em tempo real.",
     image: PROJECT_IMG_1,
     tags: ["React", "Tailwind", "Framer Motion"],
     liveUrl: "#",
@@ -15,9 +15,9 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Portfolio Website",
+    title: "Portfólio Pessoal",
     description:
-      "A modern developer portfolio built with responsive design, smooth animations, and optimized performance.",
+      "Site de portfólio responsivo com animações suaves, transições fluidas e alta performance.",
     image: PROJECT_IMG_1,
     tags: ["React", "Vite", "Tailwind"],
     liveUrl: "#",
@@ -27,9 +27,9 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Task Management App",
+    title: "Gerenciador de Tarefas",
     description:
-      "A productivity application that allows users to organize tasks, manage projects, and track progress in real time.",
+      "App de produtividade para organizar tarefas, gerenciar projetos e acompanhar o progresso diário.",
     image: PROJECT_IMG_1,
     tags: ["React", "Node.js", "MongoDB"],
     liveUrl: "#",
@@ -39,9 +39,9 @@ export const projects = [
   },
   {
     id: 4,
-    title: "REST API for Products",
+    title: "API REST de Produtos",
     description:
-      "A scalable REST API built with Node.js for managing products, categories, and user authentication.",
+      "API escalável para gestão de produtos, categorias e autenticação de usuários.",
     image: PROJECT_IMG_1,
     tags: ["Node.js", "Express", "MongoDB"],
     liveUrl: "#",
@@ -51,9 +51,9 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Real-Time Chat Application",
+    title: "Chat em Tempo Real",
     description:
-      "A real-time chat application supporting multiple rooms and instant messaging using WebSocket technology.",
+      "Aplicativo de mensagens com salas múltiplas e comunicação instantânea via WebSocket.",
     image: PROJECT_IMG_1,
     tags: ["React", "Socket.io", "Node.js"],
     liveUrl: "#",
@@ -63,9 +63,9 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Analytics Dashboard",
+    title: "Dashboard de Métricas",
     description:
-      "An interactive dashboard displaying real-time analytics, charts, and metrics with a clean and intuitive UI.",
+      "Painel interativo com gráficos em tempo real, métricas e visualização de dados intuitiva.",
     image: PROJECT_IMG_1,
     tags: ["React", "Chart.js", "Tailwind"],
     liveUrl: "#",
