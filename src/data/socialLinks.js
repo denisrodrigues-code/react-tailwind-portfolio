@@ -1,33 +1,24 @@
 import { Mail } from "lucide-react";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 export const socialLinks = [
   {
     name: "GitHub",
     icon: FiGithub,
-    url: "https://github.com",
-    color: "hover:text-gray-400",
-    bgColor: "hover:bg-gray-800",
+    url: "https://github.com/denisrodrigues-code",
   },
   {
     name: "LinkedIn",
     icon: FiLinkedin,
-    url: "https://linkedin.com",
-    color: "hover:text-blue-400",
-    bgColor: "hover:bg-blue-500/10",
-  },
-  {
-    name: "Twitter",
-    icon: FiTwitter,
-    url: "https://twitter.com",
-    color: "hover:text-sky-400",
-    bgColor: "hover:bg-sky-500/10",
+    url: "https://linkedin.com/in/denisrodrigues-dev",
   },
   {
     name: "Email",
     icon: Mail,
-    url: "mailto:alex@example.com",
-    color: "hover:text-green-400",
-    bgColor: "hover:bg-green-500/10",
+    url: "mailto:denisrodrigues.dev@gmail.com",
   },
 ];
+
+
+
+

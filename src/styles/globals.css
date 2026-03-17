@@ -14,4 +14,11 @@
     background-color: #000000;
     overflow-x: hidden;
   }
+
+  @media (pointer: fine) {
+    body.cursor-modern,
+    body.cursor-modern * {
+      cursor: none;
+    }
+  }
 }

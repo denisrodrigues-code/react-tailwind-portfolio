@@ -12,7 +12,7 @@ const Projects = () => {
 
   return (
     <section
-      id="work"
+      id="projects"
       ref={sectionRef}
       className={`py-24 px-6 ${
         isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"
@@ -46,7 +46,7 @@ const Projects = () => {
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
         >
-          <ProjectsGrid />
+          <ProjectsGrid isDarkMode={isDarkMode} />
         </motion.div>
       </div>
     </section>

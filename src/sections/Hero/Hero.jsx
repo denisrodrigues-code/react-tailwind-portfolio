@@ -6,10 +6,11 @@ import {
   itemVariants,
   textVariants,
 } from "@/constants";
+import { heroTechStack, socialLinks } from "@/data";
 import { useTheme } from "@/hooks/useTheme";
 import HeroDesktop from "./HeroDesktop";
 import HeroMobile from "./HeroMobile";
-import { heroContent, socialLinks, techStack } from "./heroData";
+import { heroContent } from "./heroData";
 
 const Hero = () => {
   const { isDarkMode } = useTheme();
@@ -61,8 +62,8 @@ const Hero = () => {
             imageVariants={imageVariants}
             heroContent={heroContent}
             socialLinks={socialLinks}
-            techStack={techStack}
-            onProjectsClick={() => scrollToSection("work")}
+            techStack={heroTechStack}
+            onProjectsClick={() => scrollToSection("projects")}
           />
 
           <HeroDesktop
@@ -73,8 +74,8 @@ const Hero = () => {
             imageVariants={imageVariants}
             heroContent={heroContent}
             socialLinks={socialLinks}
-            techStack={techStack}
-            onProjectsClick={() => scrollToSection("work")}
+            techStack={heroTechStack}
+            onProjectsClick={() => scrollToSection("projects")}
           />
         </div>
 

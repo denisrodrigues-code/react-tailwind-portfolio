@@ -1,7 +1,6 @@
 export * from "./contactInfo";
 export * from "./journeySteps";
 export * from "./navigation";
-export * from "./passions";
 export * from "./projects";
 export * from "./skills";
 export * from "./socialLinks";

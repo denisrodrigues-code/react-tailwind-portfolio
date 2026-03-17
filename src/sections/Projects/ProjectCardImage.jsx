@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { FiGithub } from "react-icons/fi";
 
-const ProjectCardImage = ({ project }) => {
+const ProjectCardImage = ({ project, isDarkMode }) => {
   return (
     <div className="relative overflow-hidden">
       <img
@@ -20,7 +20,13 @@ const ProjectCardImage = ({ project }) => {
       )}
 
       <div className="absolute top-4 right-4">
-        <span className="text-xs px-3 py-1 rounded-full font-medium bg-gray-800/80 text-gray-300 backdrop-blur-sm">
+        <span
+          className={`text-xs px-3 py-1 rounded-full font-medium backdrop-blur-sm ${
+            isDarkMode
+              ? "bg-gray-800/80 text-gray-300"
+              : "bg-white/90 text-gray-700 border border-gray-200"
+          }`}
+        >
           {project.category}
         </span>
       </div>

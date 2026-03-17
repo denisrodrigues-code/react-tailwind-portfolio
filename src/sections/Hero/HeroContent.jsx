@@ -69,8 +69,10 @@ const HeroContent = ({
         }`}
       >
         <motion.button
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.98 }}
+          data-cursor="accent"
+          whileHover={{ y: -3, scale: 1.02 }}
+          whileTap={{ scale: 0.97 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
           onClick={onProjectsClick}
           className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 md:py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300"
         >
@@ -78,8 +80,10 @@ const HeroContent = ({
         </motion.button>
 
         <motion.a
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.98 }}
+          data-cursor="accent"
+          whileHover={{ y: -3, scale: 1.02 }}
+          whileTap={{ scale: 0.97 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
           href="/cv-denis-rodrigues.pdf"
           download
           className={`border ${

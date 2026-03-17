@@ -1,12 +1,12 @@
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { skillsContent } from "@/content/portfolio";
 import { skills, stats, techStack } from "@/data";
 import { useTheme } from "@/hooks/useTheme";
 import SkillsGrid from "./SkillsGrid";
 import SkillsHeader from "./SkillsHeader";
 import SkillsStats from "./SkillsStats";
 import SkillsTechStack from "./SkillsTechStack";
-import { skillsData } from "./skillsData";
 
 const Skills = () => {
   const { isDarkMode } = useTheme();
@@ -56,7 +56,7 @@ const Skills = () => {
         <SkillsHeader
           isDarkMode={isDarkMode}
           isInView={isInView}
-          skillsData={skillsData}
+          skillsData={skillsContent}
         />
 
         <SkillsGrid
@@ -68,7 +68,7 @@ const Skills = () => {
         <SkillsTechStack
           isDarkMode={isDarkMode}
           isInView={isInView}
-          title={skillsData.extraTitle}
+          title={skillsContent.extraTitle}
           techStack={techStack}
         />
 

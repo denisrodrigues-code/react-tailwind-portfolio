@@ -9,3 +9,5 @@ export const techStack = [
   "Notion",
   "Slack",
 ];
+
+export const heroTechStack = ["React", "Node.js", "TypeScript", "MySQL"];

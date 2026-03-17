@@ -4,12 +4,12 @@ import { navigation } from "@/data";
 const NavItems = ({ scrollToSection, textColor }) => {
   return navigation.map((item) => (
     <motion.button
-      key={item}
+      key={item.id}
       whileHover={{ y: -2 }}
-      onClick={() => scrollToSection(item.toLowerCase())}
+      onClick={() => scrollToSection(item.id)}
       className={`text-sm uppercase tracking-wider transition-colors ${textColor}`}
     >
-      {item}
+      {item.label}
     </motion.button>
   ));
 };

@@ -10,12 +10,12 @@ const MobileMenu = ({ isDarkMode, scrollToSection }) => {
     <>
       {navigation.map((item) => (
         <motion.button
-          key={item}
+          key={item.id}
           whileHover={{ x: 5 }}
-          onClick={() => scrollToSection(item.toLowerCase())}
+          onClick={() => scrollToSection(item.id)}
           className={`block w-full text-left py-2 text-sm uppercase tracking-wider transition-colors ${textColor}`}
         >
-          {item}
+          {item.label}
         </motion.button>
       ))}
     </>

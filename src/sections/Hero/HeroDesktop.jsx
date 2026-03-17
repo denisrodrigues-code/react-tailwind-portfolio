@@ -11,6 +11,7 @@ const HeroDesktop = ({
   imageVariants,
   heroContent,
   socialLinks,
+  techStack,
   onProjectsClick,
 }) => {
   return (
@@ -41,6 +42,7 @@ const HeroDesktop = ({
         isDarkMode={isDarkMode}
         imageVariants={imageVariants}
         itemVariants={itemVariants}
+        techStack={techStack}
       />
     </div>
   );

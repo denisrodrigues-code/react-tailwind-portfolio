@@ -5,10 +5,14 @@ const HeroSocialLinks = ({ links, isDarkMode, variants, className = "" }) => {
     <motion.div variants={variants} className={className}>
       {links.map((social) => (
         <motion.a
-          key={social.label}
-          href={social.href}
-          aria-label={social.label}
+          key={social.name}
+          href={social.url}
+          target={social.name !== "Email" ? "_blank" : undefined}
+          rel={social.name !== "Email" ? "noreferrer" : undefined}
+          aria-label={social.name}
           whileHover={{ y: -3, scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
           className={`p-3 rounded-full transition-colors ${
             isDarkMode
               ? "text-gray-400 hover:text-white hover:bg-gray-800"

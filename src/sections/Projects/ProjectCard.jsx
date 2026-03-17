@@ -14,7 +14,7 @@ const cardVariants = {
   },
 };
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, isDarkMode }) => {
   return (
     <motion.div
       variants={cardVariants}
@@ -24,9 +24,15 @@ const ProjectCard = ({ project }) => {
       }}
       className="group relative"
     >
-      <div className="rounded-2xl overflow-hidden border transition-all duration-500 bg-gray-900/50 border-gray-800 hover:border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10 backdrop-blur-sm">
-        <ProjectCardImage project={project} />
-        <ProjectCardContent project={project} />
+      <div
+        className={`rounded-2xl overflow-hidden border transition-all duration-500 backdrop-blur-sm ${
+          isDarkMode
+            ? "bg-gray-900/50 border-gray-800 hover:border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10"
+            : "bg-white/90 border-gray-200 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-500/10"
+        }`}
+      >
+        <ProjectCardImage project={project} isDarkMode={isDarkMode} />
+        <ProjectCardContent project={project} isDarkMode={isDarkMode} />
       </div>
     </motion.div>
   );

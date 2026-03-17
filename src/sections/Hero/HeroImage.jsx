@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import PROFILE_PIC from "@/assets/images/profile-img.png";
 import HeroTechStack from "./HeroTechStack";
-import { techStack } from "./heroData";
 
 const HeroImage = ({
   isDarkMode,
   imageVariants,
   mobile = false,
   itemVariants,
+  techStack,
 }) => {
   const sizeClasses = mobile ? "w-32 h-32" : "w-80 h-96";
   const rounded = mobile ? "rounded-2xl" : "rounded-3xl";
@@ -33,11 +33,11 @@ const HeroImage = ({
 
         <motion.div
           whileHover={{
-            scale: 1.08,
-            y: -6,
-            rotate: 2,
+            scale: 1.03,
+            y: -4,
+            rotate: 1,
           }}
-          transition={{ duration: 0.3 }}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
           className={`w-full h-full ${rounded} overflow-hidden border-4 ${
             isDarkMode ? "border-gray-800" : "border-gray-300"
           } shadow-2xl`}
