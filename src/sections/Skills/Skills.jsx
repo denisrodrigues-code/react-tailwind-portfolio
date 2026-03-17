@@ -1,13 +1,12 @@
-import { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
-
-import { useTheme } from "@/hooks/useTheme";
+import { useRef } from "react";
 import { skills, stats, techStack } from "@/data";
-import { skillsData } from "./skillsData";
-import SkillsHeader from "./SkillsHeader";
+import { useTheme } from "@/hooks/useTheme";
 import SkillsGrid from "./SkillsGrid";
-import SkillsTechStack from "./SkillsTechStack";
+import SkillsHeader from "./SkillsHeader";
 import SkillsStats from "./SkillsStats";
+import SkillsTechStack from "./SkillsTechStack";
+import { skillsData } from "./skillsData";
 
 const Skills = () => {
   const { isDarkMode } = useTheme();
@@ -26,7 +25,7 @@ const Skills = () => {
   const backgroundParallaxY = useTransform(
     scrollYProgress,
     [0, 1],
-    [100, -100]
+    [100, -100],
   );
 
   return (
