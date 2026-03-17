@@ -14,7 +14,7 @@ const ProjectCardImage = ({ project }) => {
       {project.featured && (
         <div className="absolute top-4 left-4">
           <span className="bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-medium">
-            Featured
+            Destacado
           </span>
         </div>
       )}
@@ -39,7 +39,7 @@ const ProjectCardImage = ({ project }) => {
           className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full flex items-center space-x-2 text-sm font-medium transition-colors"
         >
           <ExternalLink size={16} />
-          <span>Live Demo</span>
+          <span>Ver Demo</span>
         </motion.a>
 
         <motion.a
