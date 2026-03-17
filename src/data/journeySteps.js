@@ -46,4 +46,13 @@ export const journeySteps = [
     icon: Users,
     color: "bg-pink-500",
   },
+  {
+    year: "Atual",
+    title: "Pós-graduação em Engenharia de Software",
+    company: "Faculdade Líbano",
+    description:
+      "Aprofundando meus conhecimentos em arquitetura de software, qualidade e testes, metodologias ágeis e boas práticas para desenvolvimento e manutenção de sistemas escaláveis.",
+    icon: GraduationCap,
+    color: "bg-orange-500",
+  },
 ];
