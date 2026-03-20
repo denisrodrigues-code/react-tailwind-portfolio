@@ -1,15 +1,16 @@
-import PROJECT_IMG_1 from "@/assets/images/project-1.jpg";
+import PROJECT_IMG_1 from "@/assets/images/project-1.png";
+import PROJECT_IMG_2 from "@/assets/images/project-2.jpg";
 
 export const projects = [
   {
     id: 1,
-    title: "Plataforma E-Commerce",
+    title: "FinanceHub",
     description:
-      "Loja virtual completa com sistema de filtros, integração de pagamentos e controle de estoque em tempo real.",
+      "Plataforma de gestão financeira com dashboard interativo, controle de transações e relatórios em tempo real, focada em usabilidade e performance.",
     image: PROJECT_IMG_1,
-    tags: ["React", "Tailwind", "Framer Motion"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    tags: ["React", "TypeScript", "Tailwind", ".NET", "PostgreSQL", "Redis", "RabbitMQ"],
+    liveUrl: "https://financehub-ten-sigma.vercel.app",
+    githubUrl: "https://github.com/denisrodrigues-code/financehub",
     featured: true,
     category: "Full Stack",
   },
@@ -18,7 +19,7 @@ export const projects = [
     title: "Portfólio Pessoal",
     description:
       "Site de portfólio responsivo com animações suaves, transições fluidas e alta performance.",
-    image: PROJECT_IMG_1,
+    image: PROJECT_IMG_2,
     tags: ["React", "Vite", "Tailwind"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
@@ -30,7 +31,7 @@ export const projects = [
     title: "Gerenciador de Tarefas",
     description:
       "App de produtividade para organizar tarefas, gerenciar projetos e acompanhar o progresso diário.",
-    image: PROJECT_IMG_1,
+    image: PROJECT_IMG_2,
     tags: ["React", "Node.js", "MongoDB"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
@@ -42,7 +43,7 @@ export const projects = [
     title: "API REST de Produtos",
     description:
       "API escalável para gestão de produtos, categorias e autenticação de usuários.",
-    image: PROJECT_IMG_1,
+    image: PROJECT_IMG_2,
     tags: ["Node.js", "Express", "MongoDB"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
@@ -54,7 +55,7 @@ export const projects = [
     title: "Chat em Tempo Real",
     description:
       "Aplicativo de mensagens com salas múltiplas e comunicação instantânea via WebSocket.",
-    image: PROJECT_IMG_1,
+    image: PROJECT_IMG_2,
     tags: ["React", "Socket.io", "Node.js"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
@@ -66,7 +67,7 @@ export const projects = [
     title: "Dashboard de Métricas",
     description:
       "Painel interativo com gráficos em tempo real, métricas e visualização de dados intuitiva.",
-    image: PROJECT_IMG_1,
+    image: PROJECT_IMG_2,
     tags: ["React", "Chart.js", "Tailwind"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
