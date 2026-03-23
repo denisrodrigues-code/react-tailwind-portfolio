@@ -10,7 +10,8 @@
     "format": "biome format --write .",
     "check": "biome check .",
     "check:fix": "biome check --write .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:aws": "npm run build && aws s3 sync dist s3://portfolio-denis-rodrigues-prod --delete && aws cloudfront create-invalidation --distribution-id E3LVCNLF36ZVMH --paths '/*'"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",
