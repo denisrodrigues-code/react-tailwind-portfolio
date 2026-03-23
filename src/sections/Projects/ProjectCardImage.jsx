@@ -31,19 +31,14 @@ const ProjectCardImage = ({ project, isDarkMode }) => {
         </span>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileHover={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
-        className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center space-x-4"
-      >
+      <motion.div className="absolute inset-0 hidden md:flex bg-black/60 backdrop-blur-sm items-center justify-center space-x-4 transition-opacity duration-300 md:opacity-0 md:group-hover:opacity-100">
         <motion.a
           href={project.liveUrl}
-          initial={{ y: 20, opacity: 0.5 }}
-          whileHover={{ y: 0, opacity: 1, scale: 1.05 }}
-          transition={{ duration: 0.3, delay: 0.1 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
           className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md flex items-center space-x-2 text-sm font-mono transition-colors"
           target="_blank"
+          rel="noopener"
         >
           <ExternalLink size={16} />
           <span>open_live</span>
@@ -51,16 +46,38 @@ const ProjectCardImage = ({ project, isDarkMode }) => {
 
         <motion.a
           href={project.githubUrl}
-          initial={{ y: 20, opacity: 0.5 }}
-          whileHover={{ y: 0, opacity: 1, scale: 1.05 }}
-          transition={{ duration: 0.3, delay: 0.2 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
           className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-4 py-2 rounded-md flex items-center space-x-2 text-sm font-mono transition-all"
           target="_blank"
+          rel="noopener"
         >
           <FiGithub size={16} />
           <span>source_code</span>
         </motion.a>
       </motion.div>
+
+      <div className="md:hidden flex items-center gap-3 p-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/40">
+        <a
+          href={project.liveUrl}
+          className="flex-1 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md flex items-center justify-center space-x-2 text-sm font-mono transition-colors"
+          target="_blank"
+          rel="noopener"
+        >
+          <ExternalLink size={16} />
+          <span>open_live</span>
+        </a>
+
+        <a
+          href={project.githubUrl}
+          className="flex-1 border-2 border-slate-400 dark:border-white text-slate-700 dark:text-white hover:bg-slate-800 hover:text-white dark:hover:bg-white dark:hover:text-gray-900 px-4 py-2 rounded-md flex items-center justify-center space-x-2 text-sm font-mono transition-all"
+          target="_blank"
+          rel="noopener"
+        >
+          <FiGithub size={16} />
+          <span>source_code</span>
+        </a>
+      </div>
     </div>
   );
 };
